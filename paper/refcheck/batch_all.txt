@@ -1,0 +1,36 @@
+{"doi": "10.1109/tpwrs.2009.2036481", "title": "The Impact of Charging Plug-In Hybrid Electric Vehicles on a Residential Distribution Grid", "year": 2010, "venue": "IEEE Transactions on Power Systems"}
+   authors: K. Clement-Nyns, E. Haesen, J. Driesen
+{"doi": "10.1016/j.rser.2014.07.040", "title": "Plug-in electric vehicles in electric distribution networks: A review of smart charging approaches", "year": 2014, "venue": "Renewable and Sustainable Energy Reviews"}
+   authors: J. García-Villalobos, I. Zamora, J.I. San Martín, F.J. Asensio, V. Aperribay
+{"doi": "10.1145/3307772.3328313", "title": "ACN-Data", "year": 2019, "venue": "Proceedings of the Tenth ACM International Conference on Future Energy Systems"}
+   authors: Zachary J. Lee, Tongxin Li, Steven H. Low
+{"doi": "10.1109/tsg.2021.3074437", "title": "Adaptive Charging Networks: A Framework for Smart Electric Vehicle Charging", "year": 2021, "venue": "IEEE Transactions on Smart Grid"}
+   authors: Zachary J. Lee, George Lee, Ted Lee, Cheng Jin, Rand Lee, Zhi Low, Daniel Chang, Christine Ortega
+{"doi": "10.1109/tsg.2018.2879572", "title": "Model-Free Real-Time EV Charging Scheduling Based on Deep Reinforcement Learning", "year": 2019, "venue": "IEEE Transactions on Smart Grid"}
+   authors: Zhiqiang Wan, Hepeng Li, Haibo He, Danil Prokhorov
+{"doi": "10.1109/access.2021.3064354", "title": "Reinforcement Learning Based EV Charging Management Systems–A Review", "year": 2021, "venue": "IEEE Access"}
+   authors: Heba M. Abdullah, Adel Gastli, Lazhar Ben-Brahim
+{"doi": "10.1109/tsg.2021.3103156", "title": "ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research", "year": 2021, "venue": "IEEE Transactions on Smart Grid"}
+   authors: Zachary J. Lee, Sunash Sharma, Daniel Johansson, Steven H. Low
+{"doi": "10.1109/tits.2024.3510945", "title": "EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking", "year": 2025, "venue": "IEEE Transactions on Intelligent Transportation Systems"}
+   authors: Stavros Orfanoudakis, Cesar Diaz-Londono, Yunus Emre Yılmaz, Peter Palensky, Pedro P. Vergara
+{"doi": "10.1613/jair.1.14174", "title": "A Survey of Zero-shot Generalisation in Deep Reinforcement Learning", "year": 2023, "venue": "Journal of Artificial Intelligence Research"}
+   authors: Robert Kirk, Amy Zhang, Edward Grefenstette, Tim Rocktäschel
+{"doi": "10.1016/j.dib.2021.107105", "title": "Residential electric vehicle charging datasets from apartment buildings", "year": 2021, "venue": "Data in Brief"}
+   authors: Åse Lekang Sørensen, Karen Byskov Lindberg, Igor Sartori, Inger Andresen
+{"doi": "10.1609/aaai.v32i1.11694", "title": "Deep Reinforcement Learning That Matters", "year": 2018, "venue": "Proceedings of the AAAI Conference on Artificial Intelligence"}
+   authors: Peter Henderson, Riashat Islam, Philip Bachman, Joelle Pineau, Doina Precup, David Meger
+{"doi": "10.1145/3292500.3330701", "title": "Optuna", "year": 2019, "venue": "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining"}
+   authors: Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta, Masanori Koyama
+{"doi": "10.1109/iros.2017.8202133", "title": "Domain randomization for transferring deep neural networks from simulation to the real world", "year": 2017, "venue": "2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"}
+   authors: Josh Tobin, Rachel Fong, Alex Ray, Jonas Schneider, Wojciech Zaremba, Pieter Abbeel
+{"doi": "10.1109/pesmg.2013.6672925", "title": "Estimating the impact of electric vehicle smart charging on distribution transformer aging", "year": 2013, "venue": "2013 IEEE Power &amp; Energy Society General Meeting"}
+   authors: Alex Hilshey, Paul Hines, Pooya Rezai, Jonathan Dowds
+{"doi": "10.1109/tsg.2021.3098298", "title": "Deep Reinforcement Learning for Continuous Electric Vehicles Charging Control With Dynamic User Behaviors", "year": 2021, "venue": "IEEE Transactions on Smart Grid"}
+   authors: Linfang Yan, Xia Chen, Jianyu Zhou, Yin Chen, Jinyu Wen
+{"doi": "10.1016/j.enbuild.2021.110923", "title": "Analysis of residential EV energy flexibility potential based on real-world charging reports and smart meter data", "year": 2021, "venue": "Energy and Buildings"}
+   authors: Å.L. Sørensen, K.B. Lindberg, I. Sartori, I. Andresen
+{"doi": "10.1109/iccve45908.2019.8965237", "title": "Stochastic Model Predictive Control for Scheduling Charging of Electric Vehicle Fleets with Market Power", "year": 2019, "venue": "2019 IEEE International Conference on Connected Vehicles and Expo (ICCVE)"}
+   authors: Arec L. Jamgochian, Mykel J. Kochenderfer
+{"doi": "10.1109/tii.2023.3345457/mm1", "title": "Multiagent Deep Reinforcement Learning for Electric Vehicle Fast Charging Station Pricing Game in Electricity-Transportation Nexus_supp1-3345457.pdf", "year": null, "venue": ""}
+   authors: Tianxiang Cui

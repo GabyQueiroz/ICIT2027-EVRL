@@ -1,0 +1,18 @@
+{
+  "value": 0.966629532119055,
+  "trial": 9,
+  "params": {
+    "hidden": 64,
+    "layers": 2,
+    "activation": "tanh",
+    "lr": 0.00011683715035725587,
+    "ent_coef": 0.009725666375608014,
+    "gamma": 0.97,
+    "gae_lambda": 0.9,
+    "clip": 0.2,
+    "epochs": 10,
+    "rollout_len": 192,
+    "action_repeat": 2,
+    "n_envs": 16
+  }
+}

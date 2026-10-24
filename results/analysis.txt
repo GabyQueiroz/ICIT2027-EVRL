@@ -1,0 +1,166 @@
+        Site Sessions  Chargers      Period kWh/session Dwell (h) Flex. (\%)
+0  Palo Alto  197,724        80  2016--2020         9.2       2.6         40
+1     Dundee   62,360        67  2021--2025        16.4       5.8         42
+2      Perth   13,281        40  2016--2019        11.0       4.4         52
+3  Trondheim    6,657       110  2018--2020        13.1      10.2         51
+
+MAIN (nominal test, regret %)
+                                  Palo Alto        Dundee        Perth     Trondheim
+ASAP                                   5.9          18.5         11.6          20.5
+LLF                                    2.5          12.8          6.4          15.2
+PriceGreedy+S                          4.8           8.0          6.3           8.0
+MPC+S                                  4.2           3.8          3.4           1.1
+PPO-MLP (in-domain)            2.9$\pm$0.2   8.8$\pm$0.6  4.9$\pm$0.1   6.7$\pm$1.0
+PPO-DeepSets (in-domain)       3.6$\pm$0.1   8.6$\pm$1.1  5.8$\pm$0.2   9.5$\pm$3.1
+PPO-MLP (leave-one-out)        3.1$\pm$0.2  11.9$\pm$0.6  5.6$\pm$0.5  12.4$\pm$2.4
+PPO-DeepSets (leave-one-out)   4.3$\pm$0.3  11.7$\pm$0.7  5.9$\pm$0.1  11.3$\pm$1.7
+PPO-Attention (leave-one-out)  4.3$\pm$0.2  10.8$\pm$0.8  6.0$\pm$0.2  10.8$\pm$1.6
+
+STRESS prices
+                                  Palo Alto        Dundee        Perth     Trondheim
+ASAP                                   5.7          17.2         10.0          18.2
+LLF                                    2.4          11.6          5.0          13.0
+PriceGreedy+S                          4.8           7.1          5.8           7.1
+MPC+S                                  4.2           3.4          3.5           0.8
+PPO-MLP (in-domain)            2.8$\pm$0.2   8.0$\pm$0.6  3.9$\pm$0.1   5.7$\pm$0.7
+PPO-DeepSets (in-domain)       3.4$\pm$0.1   7.5$\pm$0.8  4.7$\pm$0.1   7.8$\pm$2.4
+PPO-MLP (leave-one-out)        2.9$\pm$0.2  10.7$\pm$0.7  4.5$\pm$0.4  10.7$\pm$2.1
+PPO-DeepSets (leave-one-out)   4.1$\pm$0.3  10.3$\pm$0.7  4.7$\pm$0.1   9.8$\pm$1.1
+PPO-Attention (leave-one-out)  4.2$\pm$0.3   9.4$\pm$0.8  4.7$\pm$0.2   9.4$\pm$1.2
+
+DEPARTURE ERROR 1 h
+                                   Palo Alto        Dundee         Perth     Trondheim
+ASAP                                    5.9          18.5          11.6          20.5
+LLF                                     4.5          13.6           7.4          15.2
+PriceGreedy+S                          22.9          25.1          33.3          22.6
+MPC+S                                  21.5          19.0          28.3          11.2
+PPO-MLP (in-domain)             8.2$\pm$0.2  11.5$\pm$1.0  10.3$\pm$1.1  10.2$\pm$0.9
+PPO-DeepSets (in-domain)        6.6$\pm$0.2  11.8$\pm$0.7  11.7$\pm$2.1  11.8$\pm$0.9
+PPO-MLP (leave-one-out)         8.6$\pm$0.5  13.7$\pm$0.5  10.0$\pm$0.7  13.4$\pm$1.4
+PPO-DeepSets (leave-one-out)   11.6$\pm$0.6  13.7$\pm$0.4   9.6$\pm$0.4  12.2$\pm$1.3
+PPO-Attention (leave-one-out)  12.6$\pm$1.0  13.2$\pm$0.8   9.3$\pm$0.3  11.8$\pm$1.1
+
+SERVED / COST
+                             served   cost  regret
+ASAP          nominal       96.570  1.034  12.289
+LLF           nominal       98.855  1.034   7.641
+PriceGreedy+S nominal       97.011  0.987   6.396
+MPC+S         nominal       97.213  0.966   3.621
+PPO-MLP       nominal       98.520  1.023   7.142
+PPO-DeepSets  nominal       98.199  1.021   7.510
+PPO-Attention nominal       98.203  1.018   7.212
+ASAP          dep_noise_1h  96.570  1.034  12.289
+LLF           dep_noise_1h  98.207  1.034   8.864
+PriceGreedy+S dep_noise_1h  86.905  0.975  26.090
+MPC+S         dep_noise_1h  88.089  0.955  21.561
+PPO-MLP       dep_noise_1h  96.487  1.020  10.862
+PPO-DeepSets  dep_noise_1h  95.847  1.018  11.810
+PPO-Attention dep_noise_1h  95.560  1.014  11.924
+
+transfer mlp
+ target     paloalto  dundee  perth  trondheim
+sources                                      
+paloalto       2.93    9.35   5.93      10.28
+dundee         2.92    8.82   5.21       8.09
+perth          3.66    8.08   4.94       7.76
+trondheim      3.21    7.66   5.05       6.67
+
+transfer deepsets
+ target     paloalto  dundee  perth  trondheim
+sources                                      
+paloalto       3.61   13.07   6.57      14.62
+dundee         3.68    8.56   5.89       8.99
+perth          5.34   11.13   5.83      11.45
+trondheim      4.95    9.37   5.47       9.50
+
+GAP
+                mean                 std          
+in_domain     False     True      False     True 
+arch                                             
+deepsets   8.376321  6.875293  3.623764  2.765269
+mlp        6.432386  5.843565  2.618390  2.363107
+
+ROBUSTNESS
+                        nominal     stress  dep_noise_1h
+ASAP                 12.288690  11.260366     12.288690
+LLF                   7.640908   6.680526      8.864184
+PriceGreedy+S         6.396327   5.932916     26.089632
+MPC+S                 3.621463   3.527323     21.561106
+PPO-MLP (LOO)         7.142035   6.270183     10.861766
+PPO-DeepSets (LOO)    7.510098   6.614876     11.809885
+PPO-Attention (LOO)   7.211854   6.329718     11.924021
+
+TESTS
+             eval     target                     comparison  median_diff             p   n        p_holm
+0        nominal   paloalto        PPO-DeepSets vs PPO-MLP     1.130100  2.386485e-10  53  9.545939e-10
+1        nominal   paloalto       PPO-Attention vs PPO-MLP     1.020425  2.527405e-10  53  1.010962e-09
+2        nominal   paloalto  PPO-DeepSets vs PPO-Attention    -0.027369  7.332305e-01  53  7.332305e-01
+3        nominal   paloalto         PPO-Attention vs MPC+S     0.153750  6.045373e-01  53  6.045373e-01
+4        nominal   paloalto           PPO-Attention vs LLF     1.788904  4.726686e-10  53  1.418006e-09
+5        nominal   paloalto          PPO-DeepSets vs MPC+S     0.225519  4.281727e-01  53  4.281727e-01
+6        nominal   paloalto            PPO-DeepSets vs LLF     1.753170  1.093496e-09  53  4.373985e-09
+7        nominal   paloalto               PPO-MLP vs MPC+S    -0.755641  4.786728e-04  53  9.573455e-04
+8        nominal   paloalto                 PPO-MLP vs LLF     0.536767  1.383413e-04  53  2.766826e-04
+9        nominal     dundee        PPO-DeepSets vs PPO-MLP    -0.110603  4.358024e-02  43  4.358024e-02
+10       nominal     dundee       PPO-Attention vs PPO-MLP    -0.740262  8.214397e-08  43  2.464319e-07
+11       nominal     dundee  PPO-DeepSets vs PPO-Attention     0.664189  7.305516e-10  43  2.922206e-09
+12       nominal     dundee         PPO-Attention vs MPC+S     5.733175  8.435563e-11  43  3.374225e-10
+13       nominal     dundee           PPO-Attention vs LLF    -1.553866  3.371952e-10  43  1.348781e-09
+14       nominal     dundee          PPO-DeepSets vs MPC+S     6.528069  1.591616e-11  43  6.366463e-11
+15       nominal     dundee            PPO-DeepSets vs LLF    -0.970612  5.447623e-08  43  1.634287e-07
+16       nominal     dundee               PPO-MLP vs MPC+S     6.237610  2.000888e-11  43  8.003553e-11
+17       nominal     dundee                 PPO-MLP vs LLF    -0.657980  2.501110e-11  43  1.000444e-10
+18       nominal      perth        PPO-DeepSets vs PPO-MLP     0.263731  6.601331e-07  35  1.980399e-06
+19       nominal      perth       PPO-Attention vs PPO-MLP     0.311816  2.612016e-05  35  5.224033e-05
+20       nominal      perth  PPO-DeepSets vs PPO-Attention    -0.089961  1.633100e-01  35  3.266199e-01
+21       nominal      perth         PPO-Attention vs MPC+S     2.211134  1.810142e-06  35  5.430426e-06
+22       nominal      perth           PPO-Attention vs LLF    -0.349970  2.362151e-03  35  2.362151e-03
+23       nominal      perth          PPO-DeepSets vs MPC+S     2.180929  1.603621e-06  35  4.810863e-06
+24       nominal      perth            PPO-DeepSets vs LLF    -0.548296  3.553713e-04  35  7.107427e-04
+25       nominal      perth               PPO-MLP vs MPC+S     1.957986  6.335380e-06  35  1.900614e-05
+26       nominal      perth                 PPO-MLP vs LLF    -0.699736  3.338209e-07  35  1.001463e-06
+27       nominal  trondheim        PPO-DeepSets vs PPO-MLP    -0.772764  2.099609e-02  12  4.199219e-02
+28       nominal  trondheim       PPO-Attention vs PPO-MLP    -1.361334  1.220703e-02  12  1.220703e-02
+29       nominal  trondheim  PPO-DeepSets vs PPO-Attention     0.401367  5.224609e-02  12  1.567383e-01
+30       nominal  trondheim         PPO-Attention vs MPC+S     7.407326  4.882812e-04  12  9.765625e-04
+31       nominal  trondheim           PPO-Attention vs LLF    -3.089544  9.765625e-04  12  1.953125e-03
+32       nominal  trondheim          PPO-DeepSets vs MPC+S     7.427053  4.882812e-04  12  9.765625e-04
+33       nominal  trondheim            PPO-DeepSets vs LLF    -2.727888  4.882812e-04  12  7.107427e-04
+34       nominal  trondheim               PPO-MLP vs MPC+S     7.817489  4.882812e-04  12  9.573455e-04
+35       nominal  trondheim                 PPO-MLP vs LLF    -1.851760  4.882812e-04  12  4.882812e-04
+36  dep_noise_1h   paloalto        PPO-DeepSets vs PPO-MLP     2.667239  2.834050e-10  53  1.133620e-09
+37  dep_noise_1h   paloalto       PPO-Attention vs PPO-MLP     3.911085  4.466904e-10  53  1.786761e-09
+38  dep_noise_1h   paloalto  PPO-DeepSets vs PPO-Attention    -1.128337  5.470240e-06  53  2.188096e-05
+39  dep_noise_1h   paloalto         PPO-Attention vs MPC+S    -8.749066  2.386485e-10  53  7.159454e-10
+40  dep_noise_1h   paloalto           PPO-Attention vs LLF     8.034384  2.386485e-10  53  9.545939e-10
+41  dep_noise_1h   paloalto          PPO-DeepSets vs MPC+S    -9.749139  2.386485e-10  53  7.159454e-10
+42  dep_noise_1h   paloalto            PPO-DeepSets vs LLF     6.889468  2.386485e-10  53  9.545939e-10
+43  dep_noise_1h   paloalto               PPO-MLP vs MPC+S   -12.387327  2.386485e-10  53  7.159454e-10
+44  dep_noise_1h   paloalto                 PPO-MLP vs LLF     3.963098  2.386485e-10  53  9.545939e-10
+45  dep_noise_1h     dundee        PPO-DeepSets vs PPO-MLP     0.076485  3.467561e-01  43  3.467561e-01
+46  dep_noise_1h     dundee       PPO-Attention vs PPO-MLP    -0.218056  6.700697e-02  43  6.700697e-02
+47  dep_noise_1h     dundee  PPO-DeepSets vs PPO-Attention     0.449438  5.971844e-05  43  1.791553e-04
+48  dep_noise_1h     dundee         PPO-Attention vs MPC+S    -8.020182  3.852247e-06  43  7.704493e-06
+49  dep_noise_1h     dundee           PPO-Attention vs LLF    -0.278795  3.225835e-01  43  3.225835e-01
+50  dep_noise_1h     dundee          PPO-DeepSets vs MPC+S    -6.766371  2.283814e-05  43  4.567628e-05
+51  dep_noise_1h     dundee            PPO-DeepSets vs LLF     0.329847  3.051784e-01  43  3.051784e-01
+52  dep_noise_1h     dundee               PPO-MLP vs MPC+S    -7.146361  4.101366e-05  43  8.202732e-05
+53  dep_noise_1h     dundee                 PPO-MLP vs LLF     0.067290  4.989089e-01  43  4.989089e-01
+54  dep_noise_1h      perth        PPO-DeepSets vs PPO-MLP    -0.473069  3.190978e-03  35  7.324219e-03
+55  dep_noise_1h      perth       PPO-Attention vs PPO-MLP    -0.704685  5.127181e-04  35  1.538154e-03
+56  dep_noise_1h      perth  PPO-DeepSets vs PPO-Attention     0.301110  2.196432e-02  35  4.392865e-02
+57  dep_noise_1h      perth         PPO-Attention vs MPC+S   -17.479893  5.820766e-11  35  2.328306e-10
+58  dep_noise_1h      perth           PPO-Attention vs LLF     2.012298  3.119931e-08  35  9.359792e-08
+59  dep_noise_1h      perth          PPO-DeepSets vs MPC+S   -17.197090  5.820766e-11  35  2.328306e-10
+60  dep_noise_1h      perth            PPO-DeepSets vs LLF     2.113063  5.820766e-10  35  1.746230e-09
+61  dep_noise_1h      perth               PPO-MLP vs MPC+S   -16.775208  5.820766e-11  35  2.328306e-10
+62  dep_noise_1h      perth                 PPO-MLP vs LLF     2.669031  1.472654e-08  35  4.417961e-08
+63  dep_noise_1h  trondheim        PPO-DeepSets vs PPO-MLP    -1.067732  2.441406e-03  12  7.324219e-03
+64  dep_noise_1h  trondheim       PPO-Attention vs PPO-MLP    -1.282787  1.220703e-02  12  2.441406e-02
+65  dep_noise_1h  trondheim  PPO-DeepSets vs PPO-Attention     0.405569  1.762695e-01  12  1.762695e-01
+66  dep_noise_1h  trondheim         PPO-Attention vs MPC+S    -1.390417  9.096680e-01  12  9.096680e-01
+67  dep_noise_1h  trondheim           PPO-Attention vs LLF    -2.072004  4.882812e-03  12  9.765625e-03
+68  dep_noise_1h  trondheim          PPO-DeepSets vs MPC+S    -1.641133  1.000000e+00  12  1.000000e+00
+69  dep_noise_1h  trondheim            PPO-DeepSets vs LLF    -2.130742  1.464844e-03  12  2.929688e-03
+70  dep_noise_1h  trondheim               PPO-MLP vs MPC+S    -1.162030  5.185547e-01  12  5.185547e-01
+71  dep_noise_1h  trondheim                 PPO-MLP vs LLF    -0.811821  4.882812e-04  12  9.765625e-04

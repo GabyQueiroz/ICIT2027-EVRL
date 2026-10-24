@@ -1,0 +1,277 @@
+{
+ "The impact of charging plug-in hybrid electric vehicles on a residential distribution grid": {
+  "query": "The impact of charging plug-in hybrid electric vehicles on a residential distribution grid",
+  "doi": "10.1109/tpwrs.2009.2036481",
+  "title": "The Impact of Charging Plug-In Hybrid Electric Vehicles on a Residential Distribution Grid",
+  "authors": [
+   "K. Clement-Nyns",
+   "E. Haesen",
+   "J. Driesen"
+  ],
+  "venue": "IEEE Transactions on Power Systems",
+  "year": 2010,
+  "abstract": "Alternative vehicles, such as plug-in hybrid electric vehicles, are becoming more popular. The batteries of these plug-in hybrid electric vehicles are to be charged at home from a standard outlet or on a corporate car park. These extra electrical loads have an impact on the distribution grid which is analyzed in terms of power losses and voltage deviations. Without coordination of the charging, the vehicles are charged instantaneously when they are plugged in or after a fixed start delay. This uncoordinated power consumption on a local scale can lead to grid problems. Therefore, coordinated charging is proposed to minimize the power losses and to maximize the main grid load factor. The optimal charging profile of the plug-in hybrid electric vehicles is computed by minimizing the power losses. As the exact forecasting of household loads is not possible, stochastic programming is introduced. Two main techniques are analyzed: quadratic and dynamic programming.",
+  "citations": 2886
+ },
+ "Plug-in electric vehicles in electric distribution networks: A review of smart charging approaches": {
+  "query": "Plug-in electric vehicles in electric distribution networks: A review of smart charging approaches",
+  "doi": "10.1016/j.rser.2014.07.040",
+  "title": "Plug-in electric vehicles in electric distribution networks: A review of smart charging approaches",
+  "authors": [
+   "J. García-Villalobos",
+   "I. Zamora",
+   "J.I. San Martín",
+   "F.J. Asensio",
+   "V. Aperribay"
+  ],
+  "venue": "Renewable and Sustainable Energy Reviews",
+  "year": 2014,
+  "abstract": null,
+  "citations": 494
+ },
+ "ACN-Data: Analysis and Applications of an Open EV Charging Dataset Lee Li Low": {
+  "query": "ACN-Data: Analysis and Applications of an Open EV Charging Dataset Lee Li Low",
+  "doi": "10.1145/3307772.3328313",
+  "title": "ACN-Data",
+  "authors": [
+   "Zachary J. Lee",
+   "Tongxin Li",
+   "Steven H. Low"
+  ],
+  "venue": "Proceedings of the Tenth ACM International Conference on Future Energy Systems",
+  "year": 2019,
+  "abstract": "We are releasing ACN-Data, a dynamic dataset of workplace EV charging which currently includes over 30,000 sessions with more added daily. In this paper we describe the dataset, as well as some interesting user behavior it exhibits. To demonstrate the usefulness of the dataset, we present three examples, learning and predicting user behavior using Gaussian mixture models, optimally sizing on-site solar generation for adaptive electric vehicle charging, and using workplace charging to smooth the net demand Duck Curve.",
+  "citations": 474
+ },
+ "Adaptive Charging Networks: A Framework for Smart Electric Vehicle Charging": {
+  "query": "Adaptive Charging Networks: A Framework for Smart Electric Vehicle Charging",
+  "doi": "10.1109/tsg.2021.3074437",
+  "title": "Adaptive Charging Networks: A Framework for Smart Electric Vehicle Charging",
+  "authors": [
+   "Zachary J. Lee",
+   "George Lee",
+   "Ted Lee",
+   "Cheng Jin",
+   "Rand Lee",
+   "Zhi Low",
+   "Daniel Chang",
+   "Christine Ortega",
+   "Steven H. Low"
+  ],
+  "venue": "IEEE Transactions on Smart Grid",
+  "year": 2021,
+  "abstract": "We describe the architecture and algorithms of the Adaptive Charging Network (ACN), which was first deployed on the Caltech campus in early 2016 and is currently operating at over 100 other sites in the United States. The architecture enables real-time monitoring and control and supports electric vehicle (EV) charging at scale. The ACN adopts a flexible Adaptive Scheduling Algorithm based on convex optimization and model predictive control and allows for significant over-subscription of electrical infrastructure. We describe some of the practical challenges in real-world charging systems, including unbalanced three-phase infrastructure, non-ideal battery charging behavior, and quantized control signals. We demonstrate how the Adaptive Scheduling Algorithm handles these challenges, and compare its performance against baseline algorithms from the deadline scheduling literature using real workloads recorded from the Caltech ACN and accurate system models. We find that in these realistic settings, our scheduling algorithm can improve operator profit by 3.4 times over uncontrolled charging and consistently outperforms baseline algorithms when delivering energy in highly congested systems.",
+  "citations": 163
+ },
+ "Model-Free Real-Time EV Charging Scheduling Based on Deep Reinforcement Learning": {
+  "query": "Model-Free Real-Time EV Charging Scheduling Based on Deep Reinforcement Learning",
+  "doi": "10.1109/tsg.2018.2879572",
+  "title": "Model-Free Real-Time EV Charging Scheduling Based on Deep Reinforcement Learning",
+  "authors": [
+   "Zhiqiang Wan",
+   "Hepeng Li",
+   "Haibo He",
+   "Danil Prokhorov"
+  ],
+  "venue": "IEEE Transactions on Smart Grid",
+  "year": 2019,
+  "abstract": "Driven by the recent advances in electric vehicle (EV) technologies, EVs have become important for smart grid economy. When EVs participate in demand response program which has real-time pricing signals, the charging cost can be greatly reduced by taking full advantage of these pricing signals. However, it is challenging to determine an optimal charging strategy due to the existence of randomness in traffic conditions, user’s commuting behavior, and the pricing process of the utility. Conventional model-based approaches require a model of forecast on the uncertainty and optimization for the scheduling process. In this paper, we formulate this scheduling problem as a Markov Decision Process (MDP) with unknown transition probability. A model-free approach based on deep reinforcement learning is proposed to determine the optimal strategy for this problem. The proposed approach can adaptively learn the transition probability and does not require any system model information. The architecture of the proposed approach contains two networks: a representation network to extract discriminative features from the electricity prices and a Q network to approximate the optimal action-value function. Numerous experimental results demonstrate the effectiveness of the proposed approach.",
+  "citations": 479
+ },
+ "Reinforcement Learning Based EV Charging Management Systems A Review": {
+  "query": "Reinforcement Learning Based EV Charging Management Systems A Review",
+  "doi": "10.1109/access.2021.3064354",
+  "title": "Reinforcement Learning Based EV Charging Management Systems–A Review",
+  "authors": [
+   "Heba M. Abdullah",
+   "Adel Gastli",
+   "Lazhar Ben-Brahim"
+  ],
+  "venue": "IEEE Access",
+  "year": 2021,
+  "abstract": "To mitigate global warming and energy shortage, integration of renewable energy generation sources, energy storage systems, and plug-in electric vehicles (PEVs) have been introduced in recent years. The application of electric vehicles (EV) in the smart grid has shown a significant option to reduce carbon emission. However, due to the limited battery capacity, managing the charging and discharging process of EV as a distributed power supply is a challenging task. Moreover, the unpredictable nature of renewable energy generation, uncertainties of plug-in electric vehicles associated parameters, energy prices, and the time-varying load create new challenges for the researchers and industries to maintain a stable operation of the power system. The EV battery charging management system plays a main role in coordinating the charging and discharging mechanism to efficiently realize a secure, efficient, and reliable power system. More recently, there has been an increasing interest in data-driven approaches in EV charging modeling. Consequently, researchers are looking to deploy model-free approaches for solving the EV charging management with uncertainties. Among many existing model-free approaches, Reinforcement Learning (RL) has been widely used for EV charging management. Unlike other machine learning approaches, the RL technique is based on maximizing the cumulative reward. This article reviews the existing literature related to the RL-based framework, objectives, and architecture for the charging coordination strategies of electric vehicles in the power systems. In addition, the review paper presents a detailed comparative analysis of the techniques used for achieving different charging coordination objectives while satisfying multiple constraints. This article also focuses on the application of RL in EV coordination for research and development of the cutting-edge optimized energy management system (EMS), which are applicable for EV charging.",
+  "citations": 195
+ },
+ "ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research Lee Sharma Johansson Low IEEE Transactions on Smart Grid 2021": {
+  "query": "ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research Lee Sharma Johansson Low IEEE Transactions on Smart Grid 2021",
+  "doi": "10.1109/tsg.2021.3103156",
+  "title": "ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research",
+  "authors": [
+   "Zachary J. Lee",
+   "Sunash Sharma",
+   "Daniel Johansson",
+   "Steven H. Low"
+  ],
+  "venue": "IEEE Transactions on Smart Grid",
+  "year": 2021,
+  "abstract": "ACN-Sim is a data-driven, open-source simulation environment designed to accelerate research in the field of smart electric vehicle (EV) charging. It fills the need in this community for a widely available, realistic simulation environment in which researchers can evaluate algorithms and test assumptions. ACN-Sim provides a modular, extensible architecture, which models the complexity of real charging systems, including battery charging behavior and unbalanced three-phase infrastructure. It also integrates with a broader ecosystem of research tools. These include ACN-Data, an open dataset of EV charging sessions, which provides realistic simulation scenarios, and ACN-Live, a framework for field-testing charging algorithms. It also integrates with grid simulators like MATPOWER, PandaPower and OpenDSS, and OpenAI Gym for training reinforcement learning agents.",
+  "citations": 12
+ },
+ "EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking": {
+  "query": "EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking",
+  "doi": "10.1109/tits.2024.3510945",
+  "title": "EV2Gym: A Flexible V2G Simulator for EV Smart Charging Research and Benchmarking",
+  "authors": [
+   "Stavros Orfanoudakis",
+   "Cesar Diaz-Londono",
+   "Yunus Emre Yılmaz",
+   "Peter Palensky",
+   "Pedro P. Vergara"
+  ],
+  "venue": "IEEE Transactions on Intelligent Transportation Systems",
+  "year": 2025,
+  "abstract": "As electric vehicle (EV) numbers rise, concerns about the capacity of current charging and power grid infrastructure grow, necessitating the development of smart charging solutions. While many smart charging simulators have been developed in recent years, only a few support the development of Reinforcement Learning (RL) algorithms in the form of a Gym environment, and those that do usually lack depth in modeling Vehicle-to-Grid (V2G) scenarios. To address the aforementioned issues, this paper introduces EV2Gym, a realistic simulator platform for the development and assessment of small and large-scale smart charging algorithms within a standardized platform. The proposed simulator is populated with comprehensive EV, charging station, power transformer, and EV behavior models validated using real data. EV2Gym has a highly customizable interface empowering users to choose from pre-designed case studies or craft their own customized scenarios to suit their specific requirements. Moreover, it incorporates a diverse array of RL, mathematical programming, and heuristic algorithms to speed up the development and benchmarking of new solutions. By offering a unified and standardized platform, EV2Gym aims to provide researchers and practitioners with a robust environment for advancing and assessing smart charging algorithms.",
+  "citations": 33
+ },
+ "A Survey of Zero-shot Generalisation in Deep Reinforcement Learning": {
+  "query": "A Survey of Zero-shot Generalisation in Deep Reinforcement Learning",
+  "doi": "10.1613/jair.1.14174",
+  "title": "A Survey of Zero-shot Generalisation in Deep Reinforcement Learning",
+  "authors": [
+   "Robert Kirk",
+   "Amy Zhang",
+   "Edward Grefenstette",
+   "Tim Rocktäschel"
+  ],
+  "venue": "Journal of Artificial Intelligence Research",
+  "year": 2023,
+  "abstract": "The study of zero-shot generalisation (ZSG) in deep Reinforcement Learning (RL) aims to produce RL algorithms whose policies generalise well to novel unseen situations at deployment time, avoiding overfitting to their training environments. Tackling this is vital if we are to deploy reinforcement learning algorithms in real world scenarios, where the environment will be diverse, dynamic and unpredictable. This survey is an overview of this nascent field. We rely on a unifying formalism and terminology for discussing different ZSG problems, building upon previous works. We go on to categorise existing benchmarks for ZSG, as well as current methods for tackling these problems. Finally, we provide a critical discussion of the current state of the field, including recommendations for future work. Among other conclusions, we argue that taking a purely procedural content generation approach to benchmark design is not conducive to progress in ZSG, we suggest fast online adaptation and tackling RL-specific problems as some areas for future work on methods for ZSG, and we recommend building benchmarks in underexplored problem settings such as offline RL ZSG and reward-function variation.",
+  "citations": 313
+ },
+ "Residential electric vehicle charging datasets from apartment buildings": {
+  "query": "Residential electric vehicle charging datasets from apartment buildings",
+  "doi": "10.1016/j.dib.2021.107105",
+  "title": "Residential electric vehicle charging datasets from apartment buildings",
+  "authors": [
+   "Åse Lekang Sørensen",
+   "Karen Byskov Lindberg",
+   "Igor Sartori",
+   "Inger Andresen"
+  ],
+  "venue": "Data in Brief",
+  "year": 2021,
+  "abstract": "This data article refers to the paper \"Analysis of residential EV energy flexibility potential based on real-world charging reports and smart meter data\" [1]. The reported datasets deal with residential electric vehicle (EV) charging in apartment buildings. Several datasets are provided, with different levels of detail, aiming to serve various needs. The paper provides real-world EV charging reports describing 6,878 charging sessions registered by 97 user IDs, from December 2018 to January 2020. The charging reports include identifiers, plug-in time, plug-out time and charged energy for the sessions. Synthetic charging loads are provided with hourly resolution, assuming charging power 3.6 kW or 7.2 kW and immediate charging after plug-in. The non-charging idle time reflects the flexibility potential for the charging session, with synthetic idle capacity as the energy which could potentially have been charged during the idle times. Synthetic hourly charging loads and idle capacity are provided both for individual users, and aggregated for users with private or shared charge points. For a main garage with 33% of the charging sessions, smart meter data and synthetic charging loads are available, with aggregated values each hour. Finally, local hourly traffic density in 5 nearby traffic locations is provided, for further work related to the correlation with plug-in/plug-out times. Researchers, energy analysts, charge point operators, building owners and policy makers can benefit from the datasets and analyses, serving to increase the knowledge of residential EV charging. The data provides valuable insight into residential charging, useful for e.g. forecasting energy loads and flexibility, planning and modelling activities.",
+  "citations": 54
+ },
+ "Deep Reinforcement Learning that Matters Henderson": {
+  "query": "Deep Reinforcement Learning that Matters Henderson",
+  "doi": "10.1609/aaai.v32i1.11694",
+  "title": "Deep Reinforcement Learning That Matters",
+  "authors": [
+   "Peter Henderson",
+   "Riashat Islam",
+   "Philip Bachman",
+   "Joelle Pineau",
+   "Doina Precup",
+   "David Meger"
+  ],
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "year": 2018,
+  "abstract": "\n \n In recent years, significant progress has been made in solving challenging problems across various domains using deep reinforcement learning (RL). Reproducing existing work and accurately judging the improvements offered by novel methods is vital to sustaining this progress. Unfortunately, reproducing results for state-of-the-art deep RL methods is seldom straightforward. In particular, non-determinism in standard benchmark environments, combined with variance intrinsic to the methods, can make reported results tough to interpret. Without significance metrics and tighter standardization of experimental reporting, it is difficult to determine whether improvements over the prior state-of-the-art are meaningful. In this paper, we investigate challenges posed by reproducibility, proper experimental techniques, and reporting procedures. We illustrate the variability in reported metrics and results when comparing against common baselines and suggest guidelines to make future results in deep RL more reproducible. We aim to spur discussion about how to ensure continued progress in the field by minimizing wasted effort stemming from results that are non-reproducible and easily misinterpreted.\n \n",
+  "citations": 2625
+ },
+ "Optuna: A Next-generation Hyperparameter Optimization Framework": {
+  "query": "Optuna: A Next-generation Hyperparameter Optimization Framework",
+  "doi": "10.1145/3292500.3330701",
+  "title": "Optuna",
+  "authors": [
+   "Takuya Akiba",
+   "Shotaro Sano",
+   "Toshihiko Yanase",
+   "Takeru Ohta",
+   "Masanori Koyama"
+  ],
+  "venue": "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining",
+  "year": 2019,
+  "abstract": "The purpose of this study is to introduce new design-criteria for next-generation hyperparameter optimization software. The criteria we propose include (1) define-by-run API that allows users to construct the parameter search space dynamically, (2) efficient implementation of both searching and pruning strategies, and (3) easy-to-setup, versatile architecture that can be deployed for various purposes, ranging from scalable distributed computing to light-weight experiment conducted via interactive interface. In order to prove our point, we will introduce Optuna, an optimization software which is a culmination of our effort in the development of a next generation optimization software. As an optimization software designed with define-by-run principle, Optuna is particularly the first of its kind. We will present the design-techniques that became necessary in the development of the software that meets the above criteria, and demonstrate the power of our new design through experimental results and real world applications. Our software is available under the MIT license (https://github.com/pfnet/optuna/).",
+  "citations": 12260
+ },
+ "Domain randomization for transferring deep neural networks from simulation to the real world": {
+  "query": "Domain randomization for transferring deep neural networks from simulation to the real world",
+  "doi": "10.1109/iros.2017.8202133",
+  "title": "Domain randomization for transferring deep neural networks from simulation to the real world",
+  "authors": [
+   "Josh Tobin",
+   "Rachel Fong",
+   "Alex Ray",
+   "Jonas Schneider",
+   "Wojciech Zaremba",
+   "Pieter Abbeel"
+  ],
+  "venue": "2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+  "year": 2017,
+  "abstract": "Bridging the ‘reality gap’ that separates simulated robotics from experiments on hardware could accelerate robotic research through improved data availability. This paper explores domain randomization, a simple technique for training models on simulated images that transfer to real images by randomizing rendering in the simulator. With enough variability in the simulator, the real world may appear to the model as just another variation. We focus on the task of object localization, which is a stepping stone to general robotic manipulation skills. We find that it is possible to train a real-world object detector that is accurate to 1.5 cm and robust to distractors and partial occlusions using only data from a simulator with non-realistic random textures. To demonstrate the capabilities of our detectors, we show they can be used to perform grasping in a cluttered environment. To our knowledge, this is the first successful transfer of a deep neural network trained only on simulated RGB images (without pre-training on real images) to the real world for the purpose of robotic control.",
+  "citations": 4311
+ },
+ "Estimating the impact of electric vehicle smart charging on distribution transformer aging": {
+  "query": "Estimating the impact of electric vehicle smart charging on distribution transformer aging",
+  "doi": "10.1109/pesmg.2013.6672925",
+  "title": "Estimating the impact of electric vehicle smart charging on distribution transformer aging",
+  "authors": [
+   "Alex Hilshey",
+   "Paul Hines",
+   "Pooya Rezai",
+   "Jonathan Dowds"
+  ],
+  "venue": "2013 IEEE Power &amp; Energy Society General Meeting",
+  "year": 2013,
+  "abstract": null,
+  "citations": 64
+ },
+ "Deep Reinforcement Learning for Continuous Electric Vehicles Charging Control With Dynamic User Behaviors": {
+  "query": "Deep Reinforcement Learning for Continuous Electric Vehicles Charging Control With Dynamic User Behaviors",
+  "doi": "10.1109/tsg.2021.3098298",
+  "title": "Deep Reinforcement Learning for Continuous Electric Vehicles Charging Control With Dynamic User Behaviors",
+  "authors": [
+   "Linfang Yan",
+   "Xia Chen",
+   "Jianyu Zhou",
+   "Yin Chen",
+   "Jinyu Wen"
+  ],
+  "venue": "IEEE Transactions on Smart Grid",
+  "year": 2021,
+  "abstract": "This paper aims to crack the individual EV charging scheduling problem considering the dynamic user behaviors and the electricity price. The uncertainty of the EV charging demand is described by several factors, including the driver’s experience, the charging preference and the charging locations for realistic scenarios. An aggregate anxiety concept is introduced to characterize both the driver’s anxiety on the EV’s range and uncertain events. A mathematical model is also provided to describe the anxiety quantitatively. The problem is formulated as a Markov Decision Process (MDP) with an unknown state transition function. The objective is to find the optimal sequential charging decisions that can balance the charging cost and driver’s anxiety. A model-free deep reinforcement learning (DRL) based approach is developed to learn the optimal charging control strategy by interacting with the dynamic environment. The continuous soft actor-critic (SAC) framework is applied to design the learning method, which contains a supervised learning (SL) stage and a reinforcement learning (RL) stage. Finally, simulation studies verify the effectiveness of the proposed approach under dynamic user behaviors at different charging locations.",
+  "citations": 164
+ },
+ "Analysis of residential EV energy flexibility potential based on real-world charging reports and smart meter data": {
+  "query": "Analysis of residential EV energy flexibility potential based on real-world charging reports and smart meter data",
+  "doi": "10.1016/j.enbuild.2021.110923",
+  "title": "Analysis of residential EV energy flexibility potential based on real-world charging reports and smart meter data",
+  "authors": [
+   "Å.L. Sørensen",
+   "K.B. Lindberg",
+   "I. Sartori",
+   "I. Andresen"
+  ],
+  "venue": "Energy and Buildings",
+  "year": 2021,
+  "abstract": "Abstract The increase in the number of electric vehicles leads to an increased demand for residential charging. While EV electric loads can have a negative impact on the power grid, they also represent a large potential for energy flexibility. This study proposes a methodology to describe charging habits, electricity load profiles, and flexibility potentials of EV charging in apartment buildings. The input data used for the method are generally available for buildings with multiple EV charge points: EV charging reports with individual charging sessions and aggregated smart meter data. The case study is a large housing cooperative in Norway, with a combination of private and shared charge points for the residents. The study compares two charging power assumptions of 3.6 kW and 7.2 kW. The flexibility potential increases with higher charging power. The study reveals a significant potential for residential EV charging flexibility when private parking spaces have EV charge points.",
+  "citations": 116
+ },
+ "Model predictive control for electric vehicle charging scheduling uncertainty departure time": {
+  "query": "Model predictive control for electric vehicle charging scheduling uncertainty departure time",
+  "doi": "10.1109/iccve45908.2019.8965237",
+  "title": "Stochastic Model Predictive Control for Scheduling Charging of Electric Vehicle Fleets with Market Power",
+  "authors": [
+   "Arec L. Jamgochian",
+   "Mykel J. Kochenderfer"
+  ],
+  "venue": "2019 IEEE International Conference on Connected Vehicles and Expo (ICCVE)",
+  "year": 2019,
+  "abstract": "With the penetration of electric vehicles in local markets, vehicle-induced electricity demand can cause power grid instability. Collaborative smart charging can help stabilize grid demand and mitigate those issues. This paper formulates charge scheduling when connected vehicles constitute a large portion of instantaneous demand. Allowing coordinated charging to sway electricity price, we formulate a multi-objective stochastic optimization problem to minimize cost while maximizing charge in each car. We model stochastic base electricity demand using a Gaussian Mixture Model (GMM) and solve the certainty-equivalent stochastic optimization problem. We then implement a stochastic model predictive control (SMPC) algorithm and compare performance between a naive policy, a certainty-equivalent optimized policy, and SMPC on a dataset derived from California ISO-serviced demand.",
+  "citations": 1
+ },
+ "Deep reinforcement learning electric vehicle charging station multiple chargers variable number scalable": {
+  "query": "Deep reinforcement learning electric vehicle charging station multiple chargers variable number scalable",
+  "doi": "10.1109/tii.2023.3345457/mm1",
+  "title": "Multiagent Deep Reinforcement Learning for Electric Vehicle Fast Charging Station Pricing Game in Electricity-Transportation Nexus_supp1-3345457.pdf",
+  "authors": [
+   "Tianxiang Cui"
+  ],
+  "venue": "",
+  "year": null,
+  "abstract": null,
+  "citations": null
+ }
+}

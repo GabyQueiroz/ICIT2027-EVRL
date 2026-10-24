@@ -1,0 +1,23 @@
+# data: public sources, re-download with the instructions in README.md
+data/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# run logs
+results/**/*.log
+results/**/*.err
+results/**/*.out
+
+# latex build files and superseded draft
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.synctex.gz
+paper/main.*
+paper/template/

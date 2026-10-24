@@ -1,0 +1,26 @@
+site,step,removed,remaining,note
+paloalto,raw records,0,259415,
+paloalto,before 2016 (network build-out),52818,206597,
+paloalto,unparseable timestamps/energy,0,206597,
+paloalto,dwell < 15 min,8068,198529,
+paloalto,energy < 0.5 kWh,805,197724,
+paloalto,"dwell > 24 h (truncated, kept)",0,197724,22.0
+dundee,raw records,0,501450,
+dundee,duplicate records (overlapping 2024 files),110957,390493,
+dundee,DC rapid / ultra-rapid connectors,321514,68979,
+dundee,unparseable timestamps/energy,1941,67038,
+dundee,dwell < 15 min,4167,62871,
+dundee,energy < 0.5 kWh,511,62360,
+dundee,"dwell > 24 h (truncated, kept)",0,62360,2457.0
+perth,raw records,0,66664,
+perth,rapid / semi-rapid charger models,51435,15229,
+perth,duplicate records,7,15222,
+perth,unparseable timestamps/energy,58,15164,
+perth,dwell < 15 min,1652,13512,
+perth,energy < 0.5 kWh,231,13281,
+perth,"dwell > 24 h (truncated, kept)",0,13281,459.0
+trondheim,raw records,0,6878,
+trondheim,unparseable timestamps/energy,34,6844,
+trondheim,dwell < 15 min,173,6671,
+trondheim,energy < 0.5 kWh,14,6657,
+trondheim,"dwell > 24 h (truncated, kept)",0,6657,456.0
