@@ -14,7 +14,7 @@
 \begin{document}
 \bstctlcite{IEEEexample:BSTcontrol}
 
-\title{Cross-Site Transfer of Set-Based Deep Reinforcement Learning for EV Charging-Hub Control on Four Public Session Datasets}
+\title{Proximal Policy Optimization for Power-Limited Electric Vehicle Charging Hubs: Leave-One-Site-Out Evaluation on Four Public Session Datasets}
 
 \author{\IEEEauthorblockN{\todo{Author 1}}
 \IEEEauthorblockA{\textit{\todo{Department}} \\
@@ -40,10 +40,8 @@ set-point that a safety layer allocates by least laxity; flat, DeepSets and self
 encoders were compared after tuning with Optuna. In leave-one-site-out tests with five seeds, the PPO agents had a mean regret with respect to
 the clairvoyant optimum of 7.1--7.5\%, against 7.6\% for least-laxity-first (LLF) and 3.6\% for a
 receding-horizon linear program (MPC). With a 1\,h error in the announced departures, the regret of MPC
-rose to 21.6\%, that of PPO to 10.9--11.9\% and that of LLF to 8.9\%. The flat encoder had the lowest
-regret at the site with the shortest dwell times and the attention encoder at the residential site,
-and pooling three source sites did not reduce the regret at the held-out site with respect to the best
-single source. The code is public.
+rose to 21.6\%, that of PPO to 10.9--11.9\% and that of LLF to 8.9\%. Pooling three source sites did
+not reduce the regret at the held-out site with respect to the best single source.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -124,7 +122,7 @@ Council network~\cite{perth}, and charging reports from Norwegian apartment
 buildings~\cite{sorensen2021data}. Each record was mapped to arrival time, departure (plug-out)
 time, delivered energy and charger identifier. Table~\ref{tab:data} lists the cleaning rules and the
 sessions removed by each. Palo Alto sessions before 2016 were removed because the network was being
-built out (1\,226 sessions in 2011 against 45\,619 in 2019), the two Dundee 2024 files overlap, and DC
+built out, the two Dundee 2024 files overlap, and DC
 rapid sessions leave no room for shifting.
 The maximum rate of session $i$ is $\bar p_i=\min(\max(p^{\mathrm{nom}},1.1E_i/w_i),22)$\,kW, where
 $w_i$ is the dwell time and $p^{\mathrm{nom}}$ is 6.6\,kW for Palo Alto Level~2 (1.9\,kW Level~1),
@@ -186,8 +184,7 @@ corresponding pool; the pairing is fixed and identical for all methods. Each dat
 one virtual hub: the sessions of all its chargers share one power limit, which represents an aggregator
 or a common feeder and not the physical layout of the network. The hub has $M=48$ charger
 slots (the largest observed concurrency is 45; no session was lost to a full hub). Because the
-networks grew over the years (Palo Alto multiplied its yearly sessions by 7 between 2012 and 2019),
-the hub limit $\bar P$ is set per week to $0.8$ times the 95th percentile of the load that the week
+networks grew over the years, the hub limit $\bar P$ is set per week to $0.8$ times the 95th percentile of the load that the week
 produces under uncontrolled charging, with a floor equal to the largest $\bar p_i$ of the week.
 
 \subsection{Objective and reference optimum}
@@ -268,8 +265,8 @@ learning rate was used. Hyperparameters were tuned with Optuna (TPE sampler, med
 of the budget)~\cite{akiba2019optuna} on the Dundee training weeks, scored on 20 Dundee validation
 weeks, with $10^6$ simulator steps per trial and without augmentation (Table~\ref{tab:hpo}). The
 DeepSets study ran 10 trials (7 completed, 3 pruned) and the MLP study 20 trials (13 completed,
-7 pruned). DeepSets trials took between 14 and 76\,min, whereas the first attention trial had not finished
-after 1.6\,h; within the time available, the attention encoder was therefore not tuned and reuses
+7 pruned). The first attention trial had not finished after 1.6\,h (DeepSets: 14--76\,min), so the
+attention encoder was not tuned and reuses
 the DeepSets configuration with four heads. Final agents were trained for $1.5\times10^6$ simulator steps with 16 parallel weeks.
 
 \begin{table}[t]
@@ -431,9 +428,7 @@ for the MLP, 5.5\% and 5.8\%. Training on Palo Alto, the site with the shortest 
 highest regrets on Dundee and Trondheim for both encoders (DeepSets 13.1\% and 14.6\%). For Trondheim,
 the best single source (MLP trained on Perth, 7.8\%; DeepSets trained on Dundee, 9.0\%) had a lower
 regret than the corresponding E2 agents trained on three sources (12.4\% and 11.3\%), so pooling
-sources did not by itself reduce the regret at the held-out site. With three sources the 16 parallel
-training weeks are shared among sites; this factor was not isolated.
-
+sources did not by itself reduce the regret at the held-out site.
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{fig_transfer.pdf}
@@ -490,9 +485,8 @@ regret at three of the four sites.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.8\columnwidth]{fig_week.pdf}
-\caption{Normalized price and hub load during four days of a Dundee test week with Dundee held out
-of training (PPO-DeepSets, seed 0).}
+\includegraphics[width=0.76\columnwidth]{fig_week.pdf}
+\caption{Price and hub load, Dundee test week, Dundee held out (PPO-DeepSets, seed 0).}
 \label{fig:week}
 \end{figure}
 
@@ -505,17 +499,20 @@ below LLF and 3.5--3.9 points above MPC under nominal conditions, and 2.0--3.1 p
 the site, and the transfer gap averaged 0.5--0.8 points. The choice between optimization and a learned
 policy therefore depends on how reliable the announced departures are~\cite{lee2019acndata}.
 
-The study has limitations. One GB price series was used for all sites; each dataset was treated as one
+Limitations: one GB price series was used for all sites; each dataset was treated as one
 virtual hub with a single limit, without the unbalanced three-phase infrastructure, non-ideal
 battery behaviour and quantized control signals described for the ACN~\cite{lee2021acn}; the delivered energy was taken as the
 requested energy and the departure error was synthetic; the hub limit and $\lambda$ were fixed; the
 attention encoder was not tuned; E1 and E3 used two and one seeds; training was limited to
-$1.5\times10^6$ steps on a laptop CPU; and no field test was performed. Future work includes site-specific
+$1.5\times10^6$ steps on a laptop CPU. Future work includes site-specific
 prices, per-location hubs with three-phase limits as in ACN-Sim~\cite{lee2021acnsim}, MPC with arrival
 forecasts, policies that combine a learned component with the optimization plan, vehicle-to-grid
 operation~\cite{orfanoudakis2025ev2gym}, and a field evaluation. The datasets are
 public~\cite{paloalto,dundee,perth,sorensen2021data,elexon}; the code that produces every table and
 figure of this paper is available at \url{https://github.com/GabyQueiroz/ICIT2027-EVRL}.
+
+\textit{Declaration of generative AI use:} Claude (Anthropic) assisted in writing the code, running the experiments and drafting the text; the
+authors reviewed all of it and take responsibility for the content.
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}
