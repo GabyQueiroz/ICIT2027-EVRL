@@ -29,3 +29,16 @@ Removida: arXiv:2410.16425 (survey de RL para recarga) — **retirado pelos auto
 
 Observação: o Consensus atingiu o limite mensal (30/30, renova em 1/11/2026); a busca foi feita
 por busca web + Crossref + Semantic Scholar/OpenAlex.
+
+## Usos acrescentados na versão de submissão (27/10/2026)
+
+DOIs reconferidos no Crossref em 27/10/2026: os 17 DOIs batem em título, primeiro autor, ano, volume e páginas. O arXiv:2311.05941 foi conferido na API do arXiv (v3, autores Tongxin Li e Chenxi Sun).
+
+| Chave | Onde | Frase no artigo | Evidência na fonte |
+|---|---|---|---|
+| li2023ood | Introdução e Seção V-B | Li e Sun descrevem o MPC como conservador e independente dos dados e o RL como confiando totalmente nos dados; avaliam um escalonador OOD-aware sob a mudança de comportamento causada pela COVID-19 no ACN-Data | Resumo: "MPC is often too conservative and data-independent, whereas RL tends to be overly aggressive and fully trusts the data"; "remarkable shifts of EV charging behaviors caused by COVID-19 in the Caltech ACN-Data" |
+| lee2021acn | Introdução, Protocolo, Conclusão | Infraestrutura sobre-subscrita; MPC baseado em otimização convexa; desafios práticos: trifásico desbalanceado, bateria não ideal, sinais de controle quantizados | Resumo: "allows for significant over-subscription of electrical infrastructure"; "unbalanced three-phase infrastructure, non-ideal battery charging behavior, and quantized control signals" |
+| wan2019modelfree | Introdução | Recarga sob preços variáveis no tempo | Resumo: DRL com sinais de preço em tempo real |
+| sorensen2021flex | Seção V-A | Potencial de flexibilidade em prédios de apartamentos com pontos de recarga privados | Resumo: "significant potential for residential EV charging flexibility when private parking spaces have EV charge points" |
+| henderson2018matters | Seção V-C | Dependência dos resultados de DRL em relação à semente | Resumo: "variance intrinsic to the methods, can make reported results tough to interpret" |
+| kirk2023survey | Seção V-C | Gap de transferência como diferença entre desempenho no treino e no teste | Formalismo de generalização zero-shot do survey (gap de generalização = desempenho em treino − desempenho em teste) |
