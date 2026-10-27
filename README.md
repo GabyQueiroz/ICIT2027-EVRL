@@ -1,7 +1,6 @@
 # Set-based PPO for cross-site EV smart charging (ICIT 2027)
 
-Code for the paper *"Deep Reinforcement Learning for Power-Limited Electric Vehicle Charging Hubs with
-Leave-One-Site-Out Evaluation on Four Public Session Datasets"* (ICIT 2027 submission; LaTeX in `paper/icit2027_evrl.tex`).
+Code for the paper *"Zero-Shot Transfer of Deep Reinforcement Learning Policies for Electric Vehicle Charging Hub Scheduling"* (ICIT 2027, submission ICIT27-000286; LaTeX in `paper/icit2027_evrl.tex`).
 
 Extra scripts: `scripts/attrition.py` (sessions removed per rule), `scripts/figures.py` (paper figures),
 `scripts/timing.py` (decision time), `scripts/pipeline.py` + `scripts/status.py` (full run with status).
