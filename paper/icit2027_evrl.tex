@@ -17,13 +17,14 @@
 \title{Deep Reinforcement Learning for Power-Limited Electric Vehicle Charging Hubs with Leave-One-Site-Out Evaluation on Four Public Session Datasets}
 
 \author{\IEEEauthorblockN{Gabrielly de Queiroz Pereira\IEEEauthorrefmark{1},
-Amanda Aparecida Staler\IEEEauthorrefmark{1},
-Marcella Scoczynski Ribeiro Martins\IEEEauthorrefmark{2},\\
-Jonathan de Matos\IEEEauthorrefmark{1} and
+Amanda Aparecida Stadler\IEEEauthorrefmark{3},
+Marcella Scoczynski Ribeiro Martins\IEEEauthorrefmark{2}\IEEEauthorrefmark{3},\\
+Jonathan de Matos\IEEEauthorrefmark{1},
+Zito Palhano da Fonseca\IEEEauthorrefmark{1} and
 Maria Salete Marcon Gomes Vaz\IEEEauthorrefmark{1}}
-\IEEEauthorblockA{\IEEEauthorrefmark{1}\todo{Department, Institution, City, Country}}
-\IEEEauthorblockA{\IEEEauthorrefmark{2}\todo{Department, Institution, City, Country}\\
-\todo{e-mails}}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Department of Informatics, Graduate Program in Applied Computing, State University of Ponta Grossa (UEPG), Brazil\\
+\IEEEauthorrefmark{2}Academic Department of Electronics, \IEEEauthorrefmark{3}Graduate Program in Electrical Engineering, UTFPR, Ponta Grossa, Brazil\\
+{\small gqpereira@uepg.br, amandaastadler@gmail.com, marcella@utfpr.edu.br, jonathan@uepg.br, zpfonseca@uepg.br, salete@uepg.br}}}
 
 \maketitle
 
@@ -132,7 +133,7 @@ $1-E_i/(\bar p_i w_i)$) and weekly episodes per split.}
 \label{tab:data}
 \centering
 \footnotesize
-\setlength{\tabcolsep}{2.5pt}
+\setlength{\tabcolsep}{1.5pt}
 \begin{tabular}{lrrrr}
 \toprule
  & Palo Alto & Dundee & Perth & Trondheim\\
@@ -141,12 +142,12 @@ $1-E_i/(\bar p_i w_i)$) and weekly episodes per split.}
 Raw records & 259\,415 & 501\,450 & 66\,664 & 6\,878\\
 Before 2016 & $-$52\,818 & -- & -- & --\\
 Duplicates & -- & $-$110\,957 & $-$7 & --\\
-DC rapid / rapid models & -- & $-$321\,514 & $-$51\,435 & --\\
+DC / rapid models & -- & $-$321\,514 & $-$51\,435 & --\\
 Unparseable fields & 0 & $-$1\,941 & $-$58 & $-$34\\
 Dwell $<$ 15 min & $-$8\,068 & $-$4\,167 & $-$1\,652 & $-$173\\
 Energy $<$ 0.5 kWh & $-$805 & $-$511 & $-$231 & $-$14\\
 \textbf{Sessions kept} & \textbf{197\,724} & \textbf{62\,360} & \textbf{13\,281} & \textbf{6\,657}\\
-Dwell truncated at 24 h & 22 & 2\,457 & 459 & 456\\
+Dwell cut to 24 h & 22 & 2\,457 & 459 & 456\\
 \midrule
 Period & 2016--20 & 2021--25 & 2016--19 & 2018--20\\
 Chargers & 80 & 67 & 40 & 110\\
@@ -155,7 +156,7 @@ Mean dwell (h) & 2.6 & 5.8 & 4.4 & 10.2\\
 Mean idle share (\%) & 40 & 42 & 52 & 51\\
 \midrule
 Weeks train/val./test & 157/52/53 & 128/43/43 & 101/35/35 & 32/12/12\\
-Median $\bar P$ train/test (kW) & 80.2/40.3 & 56.7/53.1 & 18.0/30.9 & 13.5/39.9\\
+Med. $\bar P$ tr./test (kW) & 80.2/40.3 & 56.7/53.1 & 18.0/30.9 & 13.5/39.9\\
 Test weeks from & 2019-12 & 2024-11 & 2019-02 & 2019-11\\
 \bottomrule
 \end{tabular}
